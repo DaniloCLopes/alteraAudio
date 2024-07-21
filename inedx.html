@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Faixa Mixada</h1>
+    <div class="comparison-container">
+        <label>
+            <input type="radio" name="audioToggle" value="original" checked>
+            Original
+        </label>
+        <label>
+            <input type="radio" name="audioToggle" value="mixada">
+            Mixada
+        </label>
+    </div>
+    <audio id="audioPlayer" controls>
+        <source id="audioSource" src="audio/original.mp3" type="audio/mp3">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
