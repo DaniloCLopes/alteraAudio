@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const wavesurfer = WaveSurfer.create({
         container: waveformContainer,
         waveColor: '#2c2a2ac2',
-        progressColor: '#000000'
+        progressColor: '#151414'
     });
 
     // Função para carregar a faixa selecionada
