@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/wavesurfer.js"></script>
 </head>
 <body>
-    <h1>Faixa Mixada</h1>
+    <h1>Comparação Antes e Depois</h1>
     <div class="comparison-container">
         <label>
             <input type="radio" name="audioToggle" value="original" checked>
@@ -15,13 +16,12 @@
         </label>
         <label>
             <input type="radio" name="audioToggle" value="mixada">
-            Mixada
+            Mixada/Masterizada
         </label>
     </div>
-    <audio id="audioPlayer" controls>
-        <source id="audioSource" src="audio/original.mp3" type="audio/mp3">
-        Seu navegador não suporta o elemento de áudio.
-    </audio>
+    <div id="waveform"></div>
+    <button id="playPause">Play/Pause</button>
+    
 
     <script src="script.js"></script>
 </body>
